@@ -2,17 +2,16 @@ import { ButtonMobile } from "@alfalab/core-components/button/mobile";
 
 import { Typography } from "@alfalab/core-components/typography";
 
-import naborDefault from "./assets/nabor-default.png";
 import nabor1 from "./assets/nabor1.png";
 import nabor2 from "./assets/nabor2.png";
 import nabor3 from "./assets/nabor3.png";
 import nabor4 from "./assets/nabor4.png";
 import nabor5 from "./assets/nabor5.png";
-import nabor6 from "./assets/nabor6.png";
 import nabor7 from "./assets/nabor7.png";
 import nabor8 from "./assets/nabor8.png";
 import nabor9 from "./assets/nabor9.png";
 import nabor10 from "./assets/nabor10.png";
+import img from './assets/img.png';
 import { LS, LSKeys } from "./ls";
 import { appSt } from "./style.css";
 import { ThxLayout } from "./thx/ThxLayout";
@@ -61,7 +60,7 @@ export const App = () => {
 
         <Typography.Text
           tag="p"
-          view="primary-medium"
+          view="primary-large"
           weight="bold"
           style={{ padding: "0 1rem" }}
         >
@@ -73,25 +72,26 @@ export const App = () => {
             display: "flex",
             flexWrap: "wrap",
             gap: "1rem",
+            padding: "0 1rem",
             justifyContent: "space-evenly",
           }}
         >
-          <div onClick={() => setNaborType("0")} style={{ width: "128px" }}>
+          <div onClick={() => setNaborType("0")} style={{ width: "80px" }}>
             <img
-              src={naborDefault}
-              width={128}
-              height={128}
+              src={img}
+              width={80}
+              height={136}
               className={appSt.imageSlide({
                 selected: naborType === "0",
               })}
               alt=""
             />
           </div>
-          <div onClick={() => setNaborType("1")} style={{ width: "128px" }}>
+          <div onClick={() => setNaborType("1")} style={{ width: "130px" }}>
             <img
               src={nabor1}
-              width={128}
-              height={128}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "1",
               })}
@@ -101,90 +101,79 @@ export const App = () => {
           <div
             onClick={() => setNaborType("2")}
             style={{
-              width: "128px",
+              width: "130px",
             }}
           >
             <img
               src={nabor2}
-              width={128}
-              height={128}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "2",
               })}
               alt=""
             />
           </div>
-          <div onClick={() => setNaborType("3")} style={{ width: "128px" }}>
+          <div onClick={() => setNaborType("3")} style={{ width: "130px" }}>
             <img
               src={nabor3}
-              width={128}
-              height={128}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "3",
               })}
               alt=""
             />
           </div>
-          <div onClick={() => setNaborType("4")} style={{ width: "128px" }}>
+          <div onClick={() => setNaborType("4")} style={{ width: "130px" }}>
             <img
               src={nabor4}
-              width={128}
-              height={128}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "4",
               })}
               alt=""
             />
           </div>
-          <div onClick={() => setNaborType("5")} style={{ width: "128px" }}>
+          <div onClick={() => setNaborType("5")} style={{ width: "130px" }}>
             <img
               src={nabor5}
-              width={128}
-              height={128}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "5",
               })}
               alt=""
             />
           </div>
-          <div onClick={() => setNaborType("6")} style={{ width: "128px" }}>
-            <img
-              src={nabor6}
-              width={128}
-              height={128}
-              className={appSt.imageSlide({
-                selected: naborType === "6",
-              })}
-              alt=""
-            />
-          </div>
-          <div onClick={() => setNaborType("7")} style={{ width: "128px" }}>
+          <div onClick={() => setNaborType("7")} style={{ width: "130px" }}>
             <img
               src={nabor7}
-              width={128}
-              height={128}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "7",
               })}
               alt=""
             />
           </div>
-          <div onClick={() => setNaborType("8")} style={{ width: "128px" }}>
+          <div onClick={() => setNaborType("8")} style={{ width: "130px" }}>
             <img
               src={nabor8}
-              width={128}
-              height={128}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "8",
               })}
               alt=""
             />
           </div>
-          <div onClick={() => setNaborType("9")} style={{ width: "128px" }}>
+          <div onClick={() => setNaborType("9")} style={{ width: "130px" }}>
             <img
               src={nabor9}
-              width={128}
-              height={128}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "9",
               })}
@@ -192,17 +181,18 @@ export const App = () => {
             />
             <Typography.Text
               tag="p"
-              view="primary-small"
+              view="primary-medium"
+              weight="bold"
               style={{ textAlign: "center", marginBottom: 0 }}
             >
               49₽
             </Typography.Text>
           </div>
-          <div onClick={() => setNaborType("10")} style={{ width: "128px" }}>
+          <div onClick={() => setNaborType("10")} style={{ width: "130px" }}>
             <img
               src={nabor10}
-              width={128}
-              height={128}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "10",
               })}
@@ -210,7 +200,8 @@ export const App = () => {
             />
             <Typography.Text
               tag="p"
-              view="primary-small"
+              view="primary-medium"
+              weight="bold"
               style={{ textAlign: "center", marginBottom: 0 }}
             >
               49₽
