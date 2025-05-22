@@ -147,9 +147,20 @@ export const App = () => {
               alt=""
             />
           </div>
-          <div onClick={() => setNaborType("7")} style={{ width: "130px" }}>
+          <div onClick={() => setNaborType("6")} style={{ width: "130px" }}>
             <img
               src={nabor7}
+              width={130}
+              height={126}
+              className={appSt.imageSlide({
+                selected: naborType === "6",
+              })}
+              alt=""
+            />
+          </div>
+          <div onClick={() => setNaborType("7")} style={{ width: "130px" }}>
+            <img
+              src={nabor8}
               width={130}
               height={126}
               className={appSt.imageSlide({
@@ -160,22 +171,11 @@ export const App = () => {
           </div>
           <div onClick={() => setNaborType("8")} style={{ width: "130px" }}>
             <img
-              src={nabor8}
-              width={130}
-              height={126}
-              className={appSt.imageSlide({
-                selected: naborType === "8",
-              })}
-              alt=""
-            />
-          </div>
-          <div onClick={() => setNaborType("9")} style={{ width: "130px" }}>
-            <img
               src={nabor9}
               width={130}
               height={126}
               className={appSt.imageSlide({
-                selected: naborType === "9",
+                selected: naborType === "8",
               })}
               alt=""
             />
@@ -188,13 +188,13 @@ export const App = () => {
               49₽
             </Typography.Text>
           </div>
-          <div onClick={() => setNaborType("10")} style={{ width: "130px" }}>
+          <div onClick={() => setNaborType("9")} style={{ width: "130px" }}>
             <img
               src={nabor10}
               width={130}
               height={126}
               className={appSt.imageSlide({
-                selected: naborType === "10",
+                selected: naborType === "9",
               })}
               alt=""
             />
