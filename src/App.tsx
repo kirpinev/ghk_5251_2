@@ -11,7 +11,7 @@ import nabor7 from "./assets/nabor7.png";
 import nabor8 from "./assets/nabor8.png";
 import nabor9 from "./assets/nabor9.png";
 import nabor10 from "./assets/nabor10.png";
-import img from './assets/img.png';
+import img from "./assets/img.png";
 import { LS, LSKeys } from "./ls";
 import { appSt } from "./style.css";
 import { ThxLayout } from "./thx/ThxLayout";
@@ -76,7 +76,10 @@ export const App = () => {
             justifyContent: "space-evenly",
           }}
         >
-          <div onClick={() => setNaborType("0")} style={{ width: "80px" }}>
+          <div
+            onClick={() => setNaborType("0")}
+            style={{ width: "calc(50% - 1rem)" }}
+          >
             <img
               src={img}
               width={80}
@@ -85,9 +88,13 @@ export const App = () => {
                 selected: naborType === "0",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
           </div>
-          <div onClick={() => setNaborType("1")} style={{ width: "130px" }}>
+          <div
+            onClick={() => setNaborType("1")}
+            style={{ width: "calc(50% - 1rem)" }}
+          >
             <img
               src={nabor1}
               width={130}
@@ -96,6 +103,7 @@ export const App = () => {
                 selected: naborType === "1",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
           </div>
           <div
@@ -114,7 +122,10 @@ export const App = () => {
               alt=""
             />
           </div>
-          <div onClick={() => setNaborType("3")} style={{ width: "130px" }}>
+          <div
+            onClick={() => setNaborType("3")}
+            style={{ width: "calc(50% - 1rem)" }}
+          >
             <img
               src={nabor3}
               width={130}
@@ -123,9 +134,13 @@ export const App = () => {
                 selected: naborType === "3",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
           </div>
-          <div onClick={() => setNaborType("4")} style={{ width: "130px" }}>
+          <div
+            onClick={() => setNaborType("4")}
+            style={{ width: "calc(50% - 1rem)" }}
+          >
             <img
               src={nabor4}
               width={130}
@@ -134,9 +149,13 @@ export const App = () => {
                 selected: naborType === "4",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
           </div>
-          <div onClick={() => setNaborType("5")} style={{ width: "130px" }}>
+          <div
+            onClick={() => setNaborType("5")}
+            style={{ width: "calc(50% - 1rem)" }}
+          >
             <img
               src={nabor5}
               width={130}
@@ -145,9 +164,13 @@ export const App = () => {
                 selected: naborType === "5",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
           </div>
-          <div onClick={() => setNaborType("6")} style={{ width: "130px" }}>
+          <div
+            onClick={() => setNaborType("6")}
+            style={{ width: "calc(50% - 1rem)" }}
+          >
             <img
               src={nabor7}
               width={130}
@@ -156,9 +179,13 @@ export const App = () => {
                 selected: naborType === "6",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
           </div>
-          <div onClick={() => setNaborType("7")} style={{ width: "130px" }}>
+          <div
+            onClick={() => setNaborType("7")}
+            style={{ width: "calc(50% - 1rem)" }}
+          >
             <img
               src={nabor8}
               width={130}
@@ -167,9 +194,13 @@ export const App = () => {
                 selected: naborType === "7",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
           </div>
-          <div onClick={() => setNaborType("8")} style={{ width: "130px" }}>
+          <div
+            onClick={() => setNaborType("8")}
+            style={{ width: "calc(50% - 1rem)" }}
+          >
             <img
               src={nabor9}
               width={130}
@@ -178,6 +209,7 @@ export const App = () => {
                 selected: naborType === "8",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
             <Typography.Text
               tag="p"
@@ -188,7 +220,10 @@ export const App = () => {
               49₽
             </Typography.Text>
           </div>
-          <div onClick={() => setNaborType("9")} style={{ width: "130px" }}>
+          <div
+            onClick={() => setNaborType("9")}
+            style={{ width: "calc(50% - 1rem)" }}
+          >
             <img
               src={nabor10}
               width={130}
@@ -197,6 +232,7 @@ export const App = () => {
                 selected: naborType === "9",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
             <Typography.Text
               tag="p"
