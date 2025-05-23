@@ -17,6 +17,7 @@ import { appSt } from "./style.css";
 import { ThxLayout } from "./thx/ThxLayout";
 import { Gap } from "@alfalab/core-components/gap";
 import { useState } from "react";
+import { sendDataToGA } from "./utils/events.ts";
 
 export const App = () => {
   const [loading, setLoading] = useState(false);
@@ -25,7 +26,12 @@ export const App = () => {
 
   const submit = () => {
     setLoading(true);
-    Promise.resolve().then(() => {
+    sendDataToGA({
+      background: "0",
+      icon: "0",
+      screensaver: "0",
+      bundle: naborType,
+    }).then(() => {
       setLoading(false);
       setThx(true);
       LS.setItem(LSKeys.ShowThx, true);
