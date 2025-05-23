@@ -118,6 +118,7 @@ export const App = () => {
                 selected: naborType === "2",
               })}
               alt=""
+              style={{ justifySelf: "center", display: "block" }}
             />
           </div>
           <div
