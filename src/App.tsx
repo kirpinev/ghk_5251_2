@@ -108,9 +108,7 @@ export const App = () => {
           </div>
           <div
             onClick={() => setNaborType("2")}
-            style={{
-              width: "130px",
-            }}
+            style={{ width: "calc(50% - 1rem)" }}
           >
             <img
               src={nabor2}
