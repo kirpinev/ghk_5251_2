@@ -11,7 +11,7 @@ import nabor7 from "./assets/nabor7.png";
 import nabor8 from "./assets/nabor8.png";
 import nabor9 from "./assets/nabor9.png";
 import nabor10 from "./assets/nabor10.png";
-import img from "./assets/img.png";
+import naborDefault from "./assets/nabor-default.png";
 import { LS, LSKeys } from "./ls";
 import { appSt } from "./style.css";
 import { ThxLayout } from "./thx/ThxLayout";
@@ -81,14 +81,14 @@ export const App = () => {
             style={{ width: "calc(50% - 1rem)" }}
           >
             <img
-              src={img}
-              width={80}
-              height={136}
+              src={naborDefault}
+              width={130}
+              height={126}
               className={appSt.imageSlide({
                 selected: naborType === "0",
               })}
               alt=""
-              style={{ justifySelf: "center", display: "block", margin: "0 auto" }}
+              style={{ justifySelf: "center", display: "block" }}
             />
           </div>
           <div
